@@ -1,0 +1,38 @@
+extends ./_layout.pug
+
+block vars
+  - var title = 'Forms'
+
+block content
+  .grid-fluid
+    .row.xs-center
+      form.grid-fluid
+        .row
+          .col.xs
+            label First Name
+            input
+          .col.xs
+            label Last Name
+            input
+        .row
+          .col.xs
+            label Address Line 1
+            input
+        .row
+          .col.xs
+            label Address Line 2
+            input
+        .row
+          .col.xs-8
+            label City
+            input
+          .col.xs-4
+            label State
+            select
+              option Alabama
+              option California
+              option Texas
+              option West Virginia
+        .row.xs-end
+          .col.xs-6
+            button.button-primary Submit

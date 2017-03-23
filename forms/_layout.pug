@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block vars
+    block title
+      title #{title ? title + ' | ' : ''}a11y Exercises
+    block styles
+      link(rel='stylesheet', href='./rocketbelt.min.css')
+      link(rel='stylesheet', href='./styles.css')
+      script(src='https://code.jquery.com/jquery-2.2.4.min.js')
+
+  body
+    block main
+      main.grid-fluid.no-margin
+        .row
+          .col.xs
+            block content
+
+    block scripts

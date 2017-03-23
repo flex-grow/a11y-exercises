@@ -1,0 +1,19 @@
+{
+  "name": "a11y-exercises",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flex-grow/a11y-exercises.git"
+  },
+  "author": "Kendrick Arnett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flex-grow/a11y-exercises/issues"
+  },
+  "homepage": "https://github.com/flex-grow/a11y-exercises#readme"
+}
