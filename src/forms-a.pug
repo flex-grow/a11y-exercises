@@ -1,0 +1,46 @@
+extends ./_layout.pug
+
+block vars
+  - var title = 'Forms'
+
+block content
+  .grid-fluid
+    .row.xs-center
+      form.grid-fluid
+        .row
+          .col.xs.form-group
+            input#first-name(type='text')
+            label(for='first-name') First Name
+          .col.xs.form-group
+            input#last-name(type='text')
+            label(for='last-name') Last Name
+        .row
+          .col.xs.form-group
+            input#addr-1(type='text')
+            label(for='addr-1') Address Line 1
+        .row
+          .col.xs.form-group
+            input#addr-2(type='text', aria-describedby='addr-2-helper')
+            label(for='addr-2') Address Line 2
+            .messages
+              small#addr-2-helper.helper-text Apartment or number, care of, etc.
+        .row
+          .col.xs-8.form-group
+            input#city(type='text')
+            label(for='city') City
+          .col.xs-4.form-group
+            select#state
+              option Alabama
+              option California
+              option Texas
+              option West Virginia
+            label(for='state') State
+        .row
+          .col.xs-8.form-group
+            input#postal-code(type='tel', aria-describedby='postal-code-helper')
+            label(for='postal-code') Postal Code
+            .messages
+              small#postal-code-helper.helper-text US only, please
+        .row.xs-end
+          .col.xs-6
+            button.button-primary Submit
