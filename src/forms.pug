@@ -8,31 +8,33 @@ block content
     .row.xs-center
       form.grid-fluid
         .row
-          .col.xs
+          .col.xs.form-group
+            input
             label First Name
+          .col.xs.form-group
             input
-          .col.xs
             label Last Name
-            input
         .row
-          .col.xs
+          .col.xs.form-group
+            input
             label Address Line 1
-            input
         .row
-          .col.xs
+          .col.xs.form-group
+            input
             label Address Line 2
-            input
+            .messages
+              small.helper-text PO Box, Suite, etc.
         .row
-          .col.xs-8
-            label City
+          .col.xs-8.form-group
             input
-          .col.xs-4
-            label State
+            label City
+          .col.xs-4.form-group
             select
               option Alabama
               option California
               option Texas
               option West Virginia
+            label State
         .row.xs-end
           .col.xs-6
             button.button-primary Submit
