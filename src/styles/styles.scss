@@ -12,3 +12,24 @@ body {
 #wrapper {
   width: 100%;
 }
+
+.search-wrapper {
+  display: flex;
+
+  .col {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.search {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-submit {
+  width: 44px;
+  height: 100%;
+  font-size: 1.2rem;
+}

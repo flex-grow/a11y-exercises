@@ -1,0 +1,14 @@
+extends ./_layout.pug
+
+block vars
+  - var title = 'Forms'
+
+block content
+  .grid-fluid
+    .row.xs-center
+      form.grid-fluid
+        .row.search-wrapper
+          .col.xs-10
+            input.search(placeholder='Search')
+          .col.xs-2
+            button.search-submit 🔍
